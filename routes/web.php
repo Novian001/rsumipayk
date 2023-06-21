@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\AdminCategoryController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\DashboardPostController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PostController;
@@ -58,8 +59,10 @@ Route::get('/dashboard/posts/checkSlug', [DashboardPostController::class, 'check
 
 Route::resource('/dashboard/posts', DashboardPostController::class)->middleware('auth');
 
-Route::resource('/dashboard/categories', AdminCategoryController::class)->except('show')->middleware('admin');
-
 Route::get('/dashboard/settings', function () {
     return view('dashboard.settings.index', ['title' => 'Settings','active'=> 'dashboard.settings.index']);
 });
+
+Route::resource('/dashboard/categories', CategoryController::class)->except('show')->middleware('admin');
+Route::resource('/dashboard/users', UserController::class)->except('show')->middleware('admin');
+

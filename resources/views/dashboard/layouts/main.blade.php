@@ -34,12 +34,12 @@
 
     @include('dashboard.partials.navbar')
     
-    <section class=" flex bg-green-100 dark:bg-gray-600">
+    <section class="flex bg-green-100 dark:bg-gray-600">
         <div class="flex flex-1">
             @include('dashboard.partials.sidebar')
 
             <div class="flex w-full m-4 lg:m-8">
-                <div class="bg-white rounded-md flex flex-col w-full p-8 shadow-lg dark:bg-slate-900 ">
+                <div class="flex flex-col w-full p-8 bg-white rounded-md shadow-lg dark:bg-slate-900 ">
                     @yield('container')
                 </div>
             </div>
@@ -71,17 +71,9 @@
     });
     
     // Mengubah fungsi dropdownFunction()
-    function dropdownFunction(element) {
-        const dropdowns = document.getElementsByClassName("dropdown-content");
-        const list = element.nextElementSibling;
-
-        for (let i = 0; i < dropdowns.length; i++) {
-        if (dropdowns[i] !== list) {
-            dropdowns[i].classList.add("hidden");
-        }
-        }
-
-        list.classList.toggle("hidden");
+    function dropdownFunction(menuId) {
+        const dropdownMenu = document.getElementById(menuId);
+        dropdownMenu.classList.toggle("hidden");
     }
 
     // Menambahkan event listener untuk menutup dropdown saat klik di tempat lain
