@@ -47,7 +47,7 @@
     color: var(--text-heading4);
 }
 
-#hero a {
+#hero a .button {
     color: var(--text-background-secondary);
     font-weight: 600;
     background-color: #91f9e5;
@@ -65,27 +65,9 @@
     margin-left: 8px;
 }
 
-#hero .flex.items-center {
-    margin-top: 4px;
-}
-
 #hero a svg {
     width: 1.125rem;
     height: 1.125rem;
-}
-
-#hero .flex.items-center a {
-    width: 2.25rem;
-    height: 2.25rem;
-    margin-right: 0.75rem;
-    border: 1px solid var(--border-slate-300);
-    color: var(--text-slate-300);
-}
-
-#hero .flex.items-center a:hover {
-    border-color: var(--border-primary);
-    background-color: var(--bg-primary);
-    color: var(--text-white);
 }
 
 /* Responsive styles */
@@ -94,26 +76,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    #hero .w-full {
-        padding-top: 10px;
-        padding-left: 4px;
-        padding-right: 4px;
-        margin-top: 5px;
-    }
-
-    #hero .w-full.pt-10 {
-        padding-top: 10px;
-    }
-
-    #hero .w-full .relative {
-        display: flex;
-        align-items: center;
-    }
-
-    #hero .w-full.pt-10 .relative {
-        margin-top: 5px;
     }
 
     #hero img {
@@ -140,10 +102,6 @@
 #about .px-12 {
     padding-left: 12px;
     padding-right: 12px;
-}
-
-#about .w-full.px-4 {
-    margin-bottom: 10px;
 }
 
 #about .max-w-xl {
@@ -255,12 +213,6 @@
     padding-top: 20px;
 }
 
-#aduan .w-full.mx-auto {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #aduan .max-w-xl.text-center.flex.mx-auto {
     max-width: 40rem;
     text-align: center;
@@ -278,8 +230,7 @@
     padding-right: 12px;
 }
 
-#aduan
-    .bg-white.text-gray-700.w-3/5.min-h-[15rem].overflow-hidden.rounded-lg.shadow-lg.mx-auto.mt-5 {
+#aduan .card-aduan {
     background-color: #ffffff;
     color: #4a5568;
     width: 60%;
@@ -367,12 +318,6 @@
 
 /* Responsive styles */
 @media (min-width: 1024px) {
-    #aduan .w-full.mx-auto {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     #aduan .max-w-xl.text-center.flex.mx-auto {
         max-width: 40rem;
         text-align: center;
@@ -387,8 +332,7 @@
         padding-right: 12px;
     }
 
-    #aduan
-        .bg-white.text-gray-700.w-3/5.min-h-[15rem].overflow-hidden.rounded-lg.shadow-lg.mx-auto.mt-5 {
+    #aduan .card-aduan {
         width: 60%;
         min-height: 15rem;
         overflow: hidden;
@@ -474,6 +418,14 @@
 }
 
 /* end aduan */
+
+/* map */
+
+#map .card-map:hover {
+    box-shadow: 0 0 10px #2dd4bf;
+}
+
+/* end map */
 
 .card-category {
     position: relative;

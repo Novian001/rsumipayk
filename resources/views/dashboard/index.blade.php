@@ -1,5 +1,5 @@
 @extends('dashboard.layouts.main')
 
 @section('container')
-    <h1>home</h1>
+    <canvas id="chart"></canvas>
 @endsection

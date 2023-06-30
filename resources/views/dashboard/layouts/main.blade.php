@@ -53,6 +53,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.1/dist/sweetalert2.all.min.js"></script>
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
 
 <script>
     document.addEventListener("trix-file-accept", function (event) {

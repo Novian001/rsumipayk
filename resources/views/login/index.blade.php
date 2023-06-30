@@ -1,8 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-
-    <div class="row justify-content-center">
+    <div class="h-screen row justify-content-center">
         <div class="col-md-4">
         @if(session()->has('success'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -53,7 +52,7 @@
         </form>
         
         @if(session()->has('login'))
-            <small class="d-block text-center mt-3">Not registered? <a href="/register">Register Now!</a></small>
+            <small class="mt-3 text-center d-block">Not registered? <a href="/register">Register Now!</a></small>
         @endif
         </div>
     </div>

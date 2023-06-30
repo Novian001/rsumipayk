@@ -21,11 +21,11 @@
             sahabat di waktu sehat
           </h3>
           <!-- <br /> -->
-          <div class="flex items-center mt-4 bg-red-400">
-            <a href="#" class="w-full px-2 py-2 font-semibold no-underline transition duration-300 ease-in-out rounded-full text-background-secondary bg-button hover:shadow-lg hover:opacity-90">Daftar</a>
-            <a href="#" class="w-full px-2 py-2 ml-8 font-semibold no-underline transition duration-300 ease-in-out rounded-full text-background-secondary bg-button hover:shadow-lg hover:opacity-90">Jadwal</a>
+          <div class="flex w-1/2 mt-4">
+            <a href="#" class="w-full px-2 py-2 font-semibold text-center no-underline transition duration-300 ease-in-out rounded-full button text-background-secondary bg-button hover:shadow-lg hover:opacity-90">Daftar</a>
+            <a href="#" class="w-full px-2 py-2 ml-8 font-semibold text-center no-underline transition duration-300 ease-in-out rounded-full button text-background-secondary bg-button hover:shadow-lg hover:opacity-90">Jadwal</a>
           </div>
-          <div class="flex items-center mt-10">
+          <div class="flex mt-10">
             <!-- Facebook -->
             <a href="https://www.facebook.com/profile.php?id=100063495583080" target="_blank"
               class="flex items-center justify-center mr-3 border rounded w-9 h-9 border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
@@ -164,7 +164,7 @@
           Layanan Aduan
         </h1>
       </div>
-      <div class="bg-white text-gray-700 w-3/5 min-h-[15rem] overflow-hidden rounded-lg shadow-lg mx-auto mt-5">
+      <div class="bg-white text-gray-700 w-3/5 min-h-[15rem] overflow-hidden rounded-lg shadow-lg mx-auto mt-5 card-aduan">
         <div class="flex flex-wrap mt-0">
           <div class="max-w-xl mx-auto lg:w-1/2">
             <img src="../assets/images/dr.geldion.jpg" alt="aduan" />
@@ -219,7 +219,7 @@
           Lokasi
         </h1>
       </div>
-      <div class="w-full overflow-hidden text-gray-700 bg-white rounded-lg shadow-lg h-1/2">
+      <div class="w-full overflow-hidden text-gray-700 bg-white rounded-lg shadow-lg h-1/2 card-map">
         <div class="mapouter">
           <div class="gmap_canvas">
             <iframe width="100%" height="590" id="gmap_canvas"

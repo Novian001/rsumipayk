@@ -47,9 +47,9 @@
                   </div>
               </a>
           </div>
-          <a href="/dashboard/users/create">
+          <a href="/register">
             <button class="inline-flex items-start justify-start px-6 py-3 mt-4 bg-indigo-700 rounded focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 sm:mt-0 hover:bg-indigo-600 focus:outline-none">
-                <p class="text-sm font-medium leading-none text-white">Add Posts</p>
+                <p class="text-sm font-medium leading-none text-white">Add User</p>
             </button>
           </a>
       </div>
@@ -111,5 +111,13 @@
       </div>
   </div>
 
+  <script>
+    function toggleCheckbox(element) {
+      const checkboxes = document.getElementsByClassName('checkbox');
+      for (let i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].checked = element.checked;
+      }
+    }
+  </script>
 
 @endsection

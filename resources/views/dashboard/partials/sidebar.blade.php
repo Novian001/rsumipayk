@@ -11,34 +11,39 @@
         </label>
         <span class="invisible ml-2 text-sm text-slate-500 lg:visible">dark</span>
     </div>
-    <a class="flex" href="/dashboard">
+    <a class="flex my-1" href="/dashboard">
         <div class="flex lg:w-full h-12 hover:bg-green-300 dark:hover:bg-green-700 items-center rounded-lg lg:p-2 {{ request()->is('dashboard') ? 'bg-green-300 dark:bg-green-700' : '' }}">
-            <i data-feather="home"></i><span class="flex invisible pl-2 text-black dark:text-white lg:visible">Dashboard</span>
+            <i class="dark:text-white" data-feather="home"></i><span class="flex invisible pl-2 text-black dark:text-white lg:visible">Dashboard</span>
         </div>
     </a>
     
-    <a class="flex" href="/dashboard/posts">
+    <a class="flex my-1" href="/dashboard/posts">
         <div class="flex lg:w-full h-12 hover:bg-green-300 dark:hover:bg-green-700 items-center rounded-lg lg:p-2 {{ request()->is('dashboard/posts') ? 'bg-green-300 dark:bg-green-700' : '' }}">
-            <i data-feather="file-plus"></i><span class="flex invisible pl-2 text-black dark:text-white lg:visible">Post</span>
+            <i class="dark:text-white" data-feather="file-plus"></i><span class="flex invisible pl-2 text-black dark:text-white lg:visible">Post</span>
         </div>
     </a>
     
-    <a class="flex" href="/dashboard/settings">
+    <a class="flex my-1" href="/dashboard/settings">
         <div class="flex lg:w-full h-12 hover:bg-green-300 dark:hover:bg-green-700 items-center rounded-lg lg:p-2 {{ request()->is('dashboard/settings') ? 'bg-green-300 dark:bg-green-700' : '' }}">
-            <i data-feather="settings"></i><span class="flex invisible pl-2 text-black dark:text-white lg:visible">Settings</span>
+            <i class="dark:text-white" data-feather="settings"></i><span class="flex invisible pl-2 text-black dark:text-white lg:visible">Settings</span>
         </div>
     </a>
     @can('admin')
-    <div class="flex flex-col h-12 my-4 rounded-lg lg:w-full">
+    <div class="flex flex-col h-12 my-4 rounded-lg lg:w-full dark:text-white">
         Administrator
-        <a class="flex" href="/dashboard/categories">
+        <a class="flex my-1" href="/dashboard/categories">
             <div class="flex lg:w-full h-12 hover:bg-green-300 dark:hover:bg-green-700 items-center rounded-lg lg:p-2 {{ request()->is('dashboard/categories') ? 'bg-green-300 dark:bg-green-700' : '' }}">
-                <i data-feather="file-plus"></i><span class="flex invisible pl-2 text-black dark:text-white lg:visible">Category</span>
+                <i class="dark:text-white" data-feather="filter"></i><span class="flex invisible pl-2 text-black dark:text-white lg:visible">Category</span>
             </div>
         </a>
-        <a class="flex" href="/dashboard/users">
+        <a class="flex my-1" href="/dashboard/users">
             <div class="flex lg:w-full h-12 hover:bg-green-300 dark:hover:bg-green-700 items-center rounded-lg lg:p-2 {{ request()->is('dashboard/users') ? 'bg-green-300 dark:bg-green-700' : '' }}">
-                <i data-feather="users"></i><span class="flex invisible pl-2 text-black dark:text-white lg:visible">Users</span>
+                <i class="dark:text-white" data-feather="users"></i><span class="flex invisible pl-2 text-black dark:text-white lg:visible">Users</span>
+            </div>
+        </a>
+        <a class="flex my-1" href="/dashboard/doctors">
+            <div class="flex lg:w-full h-12 hover:bg-green-300 dark:hover:bg-green-700 items-center rounded-lg lg:p-2 {{ request()->is('dashboard/doctors') ? 'bg-green-300 dark:bg-green-700' : '' }}">
+                <i class="dark:text-white" data-feather="calendar"></i><span class="flex invisible pl-2 text-black dark:text-white lg:visible">Doctor</span>
             </div>
         </a>
     </div>

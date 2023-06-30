@@ -65,22 +65,22 @@
             <nav id="nav-menu" class="hidden absolute right-4 max-w-[250px] w-full lg:grid lg:right-0 lg:static lg:max-w-full lg:items-center">
                 <ul class="items-center block lg:flex lg:my-0 lg:justify-between">
                     <li class="group">
-                        <a href="/" class="flex mx-1 my-2 text-gray-500 no-underline lg:my-0 hover:text-primary lg:text-white lg:mr-2 md:mx-4  {{ Request::is('/') ? 'active' : '' }}">Home</a>
+                        <a href="/" class="flex mx-2 my-2 text-gray-500 no-underline lg:my-0 hover:text-primary lg:text-white lg:mr-2 md:mx-4  {{ Request::is('/') ? 'active' : '' }}">Home</a>
                     </li>
                     <li class="group">
-                        <a href="#about" class="flex mx-1 my-2 text-gray-500 no-underline lg:my-0 hover:text-primary lg:text-white lg:mr-2 md:mx-4">About</a>
+                        <a href="#about" class="flex mx-2 my-2 text-gray-500 no-underline lg:my-0 hover:text-primary lg:text-white lg:mr-2 md:mx-4">About</a>
                     </li>
                     <li class="group">
-                        <a href="#galeri" class="flex mx-1 my-2 text-gray-500 no-underline lg:my-0 hover:text-primary lg:text-white lg:mr-2 md:mx-4">Galeri</a>
+                        <a href="#galeri" class="flex mx-2 my-2 text-gray-500 no-underline lg:my-0 hover:text-primary lg:text-white lg:mr-2 md:mx-4">Galeri</a>
                     </li>
                     <li class="group">
-                        <a href="#aduan" class="flex mx-1 my-2 text-gray-500 no-underline lg:my-0 hover:text-primary lg:text-white lg:mr-2 md:mx-4">Aduan</a>
+                        <a href="#aduan" class="flex mx-2 my-2 text-gray-500 no-underline lg:my-0 hover:text-primary lg:text-white lg:mr-2 md:mx-4">Aduan</a>
                     </li>
                     <li class="group">
-                        <a href="/posts" class="no-underline flex mx-1 my-2 lg:my-0 text-gray-500 hover:text-primary lg:text-white lg:mr-2 md:mx-4 {{ Request::is('posts') ? 'active' : '' }}">Berita&Artikel</a>
+                        <a href="/posts" class="no-underline flex mx-2 my-2 lg:my-0 text-gray-500 hover:text-primary lg:text-white lg:mr-2 md:mx-4 {{ Request::is('posts') ? 'active' : '' }}">Berita&Artikel</a>
                     </li>
                     <li class="group">
-                        <a href="#" class="flex mx-1 my-2 text-gray-500 no-underline lg:my-0 hover:text-primary lg:text-white lg:mr-2 md:mx-4">Data Informasi</a>
+                        <a href="/jadwal" class="flex mx-2 my-2 text-gray-500 no-underline lg:my-0 hover:text-primary lg:text-white lg:mr-2 md:mx-4">Data Informasi</a>
                     </li>
                     <li class="ml-auto group">
                         @auth
@@ -95,7 +95,7 @@
                         </div>
                         @else
                         <li class="group">
-                            <a class="flex no-underline mx-1 my-2 lg:my-0 items-center text-gray-500 hover:text-primary lg:text-white lg:mr-2 md:mx-4 {{ Request::is('login') ? 'active' : '' }}" href="/login">
+                            <a class="flex no-underline mx-2 my-2 lg:my-0 items-center text-gray-500 hover:text-primary lg:text-white lg:mr-2 md:mx-4 {{ Request::is('login') ? 'active' : '' }}" href="/login">
                                 <button type="button" class="inline-flex items-center justify-center gap-x-1.5 rounded-md bg-button px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                                     Login
                                 </button>

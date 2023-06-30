@@ -2,7 +2,7 @@
 
 @section('container')
 
-    <div class="row justify-content-center">
+    <div class="h-screen row justify-content-center">
         <div class="col-md-4">
             <form action="/register" method="POST" class="mt-4">
                 @csrf
@@ -36,7 +36,7 @@
             </form>
             
             @if(session()->has('login'))
-                <small class="d-block text-center mt-3">Have account? <a href="/login">login Now!</a></small>
+                <small class="mt-3 text-center d-block">Have account? <a href="/login">login Now!</a></small>
             @endif
         </div>
     </div>
